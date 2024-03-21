@@ -11,7 +11,8 @@ Delete) on holiday plans.
 
 # Dependecies
     composer require laravellegends/pt-br-validator
-
+    composer require darkaonline/l5-swagger
+    composer require zircote/swagger-php
 
 ## Installation
 
@@ -33,26 +34,17 @@ Create database from migration
 ```
   php artisan migrate
 ```
-Create database entries to test
 
-```
-  php artisan db:seed 
-```
 Run server
 
 ```
   php artisan serve
 ```
 
-To run unit teste
+To run unit test
 ```
    vendor/bin/phpunit
 ```
-
-## Run project
-
-To run this project you will need to create access token with `/api/V1/login` endpoint after use ``php artisan db:seed`` (NOTE: If you run the unit test the database will be deleted so you will need to run the command ``php artisan db:seed`` again )
-
 
 ## API Documentation
 ```

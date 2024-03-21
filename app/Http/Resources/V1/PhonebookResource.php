@@ -19,12 +19,8 @@ class PhonebookResource extends JsonResource
             'email'     =>  $this->email,
             'birthdate' =>  $this->birthdate,
             'CPF'       =>  $this->CPF,
-            'phones'    =>  $this->phones
+            'phones'    =>  unserialize($this->phones)
         ];
     }
 
-    public function report(Request $request)
-    {
-
-    }
 }
