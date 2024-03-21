@@ -41,9 +41,9 @@ Run server
   php artisan serve
 ```
 
-To run unit test
+To run tests
 ```
-   vendor/bin/phpunit
+   php artisan test 
 ```
 
 ## API Documentation

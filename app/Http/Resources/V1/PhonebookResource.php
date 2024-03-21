@@ -22,5 +22,5 @@ class PhonebookResource extends JsonResource
             'phones'    =>  unserialize($this->phones)
         ];
     }
-
+    
 }

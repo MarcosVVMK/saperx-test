@@ -123,7 +123,7 @@ class PhonebookController extends Controller
                 'name'      => 'required|max:100',
                 'email'     => 'required|email',
                 'birthdate' => 'required|date_format:Y-m-d',
-                'CPF'       => 'required|cpf|unique',
+                'CPF'       => 'required|cpf',
                 'phones'    => 'required|array'
             ]);
 
@@ -237,7 +237,7 @@ class PhonebookController extends Controller
         }
 
         $validator = Validator::make( $request->all(), [
-            'name'      => 'required|max:100',
+            'name'      => 'unique|required|max:100',
             'email'     => 'required|email',
             'birthdate' => 'required|date_format:Y-m-d',
             'CPF'       => 'required|cpf|unique',
