@@ -120,10 +120,10 @@ class PhonebookController extends Controller
     {
         $validator = Validator::make( $request->all(),
             [
-                'name'      => 'required|max:100|unique',
+                'name'      => 'required|max:100',
                 'email'     => 'required|email',
                 'birthdate' => 'required|date_format:Y-m-d',
-                'CPF'       => 'required|cpf|unique',
+                'CPF'       => 'required|cpf',
                 'phones'    => 'required|array'
             ]);
 
